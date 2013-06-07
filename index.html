@@ -4,11 +4,9 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Si4t.github.io : SI4T = Search Integration 4 Tridion, a set of open source projects to help you get SDL Tridion CMS managed content into your web app search index" />
-
+    <meta name="description" content="SI4T = Search Integration for Tridion, a set of open source projects to help you get SDL Tridion CMS managed content into your web app search index" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Si4t.github.io</title>
+    <title>SI4T - Search Integration for Tridion</title>
   </head>
 
   <body>
@@ -17,30 +15,45 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/SI4T">View on GitHub</a>
-
-          <h1 id="project_title">Si4t.github.io</h1>
+         <h1 id="project_title">SI4T : Overview</h1>
           <h2 id="project_tagline">SI4T = Search Integration 4 Tridion, a set of open source projects to help you get SDL Tridion CMS managed content into your web app search index</h2>
-
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <h3>Getting Started</h3>
+        <p>If you are thinking of integrating a front-end (ie web application) search engine in your SDL Tridion
+        project, you are in the right place.</p>
+        <p>Probably you already have a search engine in mind, but if not we recommend looking at <a href="http://lucene.apache.org/solr/">Apache Solr</a>.</p>
+        <p>Firstly you will need to set up the <a href="http://si4t.github.io/SI4T">Framework</a></p> - a Generic method of configuring and publishing
+        indexing instructions from SDL Tridion</p>
+        <p>Next you will need to implement an indexer for your search engine. This is the bridge between the framework
+          and the specifics of the search engine you have selected. For Solr, you can use the ready-made <a href="http://si4t.github.io/Solr">Solr indexer</a>.
+          For other search engines, you will need to do a bit of coding (you can use the Solr indexer as an example).
+        </p>
+        <p>Next publish your content to get it into the index</p>
+        <p>Finally, you will need to implement some query logic in your web app code. It is not our goal to provide this here
+          as it is very technology and project requirement dependent, however watch this space for some examples using Solr
+          with Javascript, .NET and Java.
+        </p>
         <h3>
-<a name="si4t-projects" class="anchor" href="#si4t-projects"><span class="octicon octicon-link"></span></a>SI4T Projects:</h3>
-
-<p>The following projects are within the SI4T Organization:</p>
-
-<ul>
-<li>
-<a href="http://si4t.github.io/SI4T">http://si4t.github.io/SI4T</a> - The Core, Generic SI4T Framework, including TBBs and Storage Extensions</li>
-<li>
-<a href="http://si4t.github.io/Solr">http://si4t.github.io/Solr</a> - Indexer implementation for Apache Solr, to be used in conjunction with the above framework</li>
-</ul>
-<p>A brief overview of the project can be found in <a href="http://prezi.com/kznausrbt5ta/search-integration-for-tridion/">this presentation</a></p>
-      <p>Thanks to <a href="http://www.contentbloom.com">Content Bloom</a> and <a href="http://www.sdl.com">SDL</a> for help getting this project started!</p>
-        
+          <a name="si4t-projects" class="anchor" href="#si4t-projects">
+            <span class="octicon octicon-link"></span>
+          </a>Here is a full list of SI4T Projects and Resources:</h3>
+          <ul>
+            <li>
+              <a href="http://si4t.github.io/SI4T">http://si4t.github.io/SI4T</a> - The Core, Generic SI4T Framework, including TBBs and Storage Extensions
+            </li>
+            <li>
+              <a href="http://si4t.github.io/Solr">http://si4t.github.io/Solr</a> - Indexer implementation for Apache Solr, to be used in conjunction with the above framework
+            </li>
+            <li>
+              A brief overview of the project can be found in <a href="http://prezi.com/kznausrbt5ta/search-integration-for-tridion/">this presentation</a>
+            </li>
+          </ul>
+          <p>Thanks to <a href="http://www.contentbloom.com">Content Bloom</a> and <a href="http://www.sdl.com">SDL</a> for help getting this project started!</p>
       </section>
     </div>
 
@@ -50,8 +63,5 @@
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
